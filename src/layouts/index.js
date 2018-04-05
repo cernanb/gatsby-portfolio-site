@@ -22,7 +22,7 @@ const TemplateWrapper = ({ children, location: { pathname } }) => {
       }}
     >
       <Helmet
-        title="Gatsby Default Starter"
+        title="Cernan Bernardo"
         meta={[
           { name: 'description', content: 'Sample' },
           { name: 'keywords', content: 'sample, something' },
