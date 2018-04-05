@@ -40,7 +40,8 @@ const Header = () => (
           <Link to="/portfolio" style={navLink}>
             Portfolio
           </Link>
-          <Link style={navLink}>Portfolio</Link>
+          <Link style={navLink}>Contact</Link>
+          <Link style={navLink}>Blog</Link>
         </nav>
       </h1>
     </div>
@@ -50,7 +51,7 @@ const Header = () => (
 export default Header
 
 const navLink = {
-  color: 'white',
+  color: 'black',
   fontSize: '20px',
   marginLeft: '25px',
   textDecoration: 'none',
