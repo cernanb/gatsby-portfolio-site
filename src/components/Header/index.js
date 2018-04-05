@@ -51,9 +51,10 @@ const Header = () => (
 export default Header
 
 const navLink = {
-  color: 'black',
+  color: '#e67e22',
   fontSize: '20px',
   marginLeft: '25px',
   textDecoration: 'none',
+  textShadow: '0.1px 0.1px #000',
   fontWeight: '400',
 }
