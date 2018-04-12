@@ -2,14 +2,16 @@ import React from 'react'
 import Link from 'gatsby-link'
 import logo2 from './logo2.png'
 
-const Header = () => (
+const Header = ({ pathname }) => (
   <div>
     <div
       style={{
-        margin: '0 auto',
+        textAlign: 'center',
+        background: `${pathname === '/' ? '' : '#d2dae2'}`,
+        paddingBottom: '25px',
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: '0 auto', textAlign: 'center', height: '60px' }}>
         <Link
           to="/"
           style={{
@@ -25,25 +27,24 @@ const Header = () => (
             src={logo2}
           />
         </Link>
-        <nav
-          style={{
-            fontFamily: "'Open Sans', sans-serif",
-            fontSize: '20px',
-            float: 'right',
-            marginTop: '26px',
-            marginRight: '60px',
-          }}
-        >
-          <Link to="/" style={navLink}>
-            Home
-          </Link>
-          <Link to="/portfolio" style={navLink}>
-            Portfolio
-          </Link>
-          <Link style={navLink}>Contact</Link>
-          <Link style={navLink}>Blog</Link>
-        </nav>
       </h1>
+      <nav
+        style={{
+          fontFamily: "'Open Sans', sans-serif",
+          fontSize: '20px',
+          marginTop: '20px',
+          display: 'inline-block',
+        }}
+      >
+        <Link to="/" style={navLink}>
+          Home
+        </Link>
+        <Link to="/portfolio" style={navLink}>
+          Portfolio
+        </Link>
+        <Link style={navLink}>Contact</Link>
+        <Link style={navLink}>Blog</Link>
+      </nav>
     </div>
   </div>
 )
