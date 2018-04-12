@@ -5,6 +5,7 @@ import hero from './hero.jpg'
 
 import Header from '../components/Header'
 import './index.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const TemplateWrapper = ({ children, location: { pathname } }) => {
   const backgroundImage = pathname === '/' ? `url(${hero})` : ''
@@ -13,7 +14,6 @@ const TemplateWrapper = ({ children, location: { pathname } }) => {
       style={{
         margin: 0,
         backgroundImage,
-        backgroundColor: 'lightgrey',
         backgroundPosition: 'center center',
         opacity: 0.8,
         backgroundRepeat: 'no-repeat',
@@ -28,7 +28,7 @@ const TemplateWrapper = ({ children, location: { pathname } }) => {
           { name: 'keywords', content: 'sample, something' },
         ]}
       />
-      <Header />
+      <Header pathname={pathname} />
       <div
         style={{
           margin: '0 auto',
