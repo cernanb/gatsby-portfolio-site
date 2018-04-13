@@ -11,7 +11,7 @@ const IndexPage = () => (
         textShadow: '0.1px 0.1px #fff',
         fontFamily: "'Open Sans', sans-serif",
         fontWeight: '300',
-        fontSize: '65px',
+        fontSize: '66px',
       }}
     >
       I'm Cernan Bernardo and I
